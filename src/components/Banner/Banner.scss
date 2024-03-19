@@ -1,0 +1,61 @@
+.banner {
+    margin-top: 70px;
+    padding: 20px;
+    padding-left: 50px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    // align-items: center;
+    background: linear-gradient(180deg, hsla(232, 100%, 7%, 0.875) 60%, hsla(232, 100%, 7%, 0.719) 100%), url("/img/aran-mtnez-sTvu6hK3ul4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--gray-100);
+    gap: 20px;
+
+    .title {
+        font-size: var(--big-font-size);
+        font-weight: var(--font-bold);
+        font-family: var(--serif-family);
+        letter-spacing: 1px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span{
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color-light);
+            border-radius: 15px;
+        }
+    }
+
+    .subtitle {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: var(--normal-font-size);
+        text-align: center;
+        width: max-content;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-left: 80px;
+
+        .title {
+            font-size: var(--biggest-font-size);
+        }
+
+        .subtitle {
+            font-size: var(--h2-font-size);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 40vh;
+        margin-top: 80px;
+
+    }
+}

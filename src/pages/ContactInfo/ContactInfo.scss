@@ -1,0 +1,226 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .contactDetails {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 40px;
+
+            .contactDetailsContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 30px;
+                color: var(--gray-100);
+
+                .contactDetailsTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .title {
+                        font-size: var(--h1-font-size);
+                        font-weight: var(--font-semi-bold);
+                        font-family: var(--serif-family);
+                        text-transform: capitalize;
+                    }
+
+                    .subtitle {
+                        font-size: var(--normal-font-size);
+                        font-weight: var(--font-regular);
+                        font-family: var(--sans-family);
+                    }
+                }
+
+                .contactDetailsInfo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 50px;
+
+                    div {
+                        display: flex;
+                        gap: 30px;
+                        font-size: var(--normal-font-size);
+                        line-height: 20px;
+
+                        .icon {
+                            font-size: var(--h2-font-size);
+                        }
+                    }
+                }
+
+                .contactDetailsSocials {
+                    display: flex;
+                    gap: 30px;
+                    margin-top: 50px;
+
+                    .icon {
+                        font-size: var(--h1-font-size);
+                        color: var(--accent-color-light);
+                        transition: all .3s ease;
+
+                        &:hover {
+                            color: var(--accent-color);
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 40px 0;
+            width: 100%;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+
+                .formInputs {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    width: 100%;
+
+                    input,
+                    textarea {
+                        width: 80%;
+                        height: 40px;
+                        padding: 10px 8px;
+                        font-size: var(--normal-font-size);
+                        color: var(--gray-900);
+                        border: none;
+                        border-bottom: 2px solid var(--gray-700);
+                        outline: none;
+                        border-radius: 3px;
+                    }
+
+                    textarea {
+                        height: 120px;
+                    }
+                }
+
+                button {
+                    padding: 10px;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    background-color: var(--secondary-color);
+                    color: var(--gray-100);
+                    font-size: var(--normal-font-size);
+                    cursor: pointer;
+                    transition: all .3s ease;
+                    min-width: 120px;
+
+                    &:hover {
+                        background-color: var(--primary-color-dark);
+                        color: var(--gray-100);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Small Devices */
+    @media screen and (max-width:350px) {
+        .container {
+
+            .contactForm {
+
+                form {
+
+                    button {
+                        padding: 8px;
+                        font-size: var(--small-font-size);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Medium Devices */
+    @media screen and (min-width:768px) {
+
+        .container {
+            flex-direction: row;
+        }
+    }
+
+    /* Large Devices */
+    @media screen and (min-width:1024px) {
+
+        .container {
+            overflow: hidden;
+            background-color: var(--gray-300);
+            border-radius: 8px;
+            width: 70%;
+            margin: 40px auto;
+
+            .contactDetails {
+                width: 50%;
+                margin: 10px 8px;
+                border-radius: 8px;
+            }
+
+            .contactForm {
+                gap: 20px;
+                width: 50%;
+
+                form {
+
+                    .formInputs {
+                        gap: 20px;
+
+                        input,
+                        textarea {
+                            font-size: var(--h3-font-size);
+                            background-color: transparent;
+                        }
+
+                        textarea {
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Largest Devices */
+    @media screen and (min-width:1244px) {
+
+        .container{
+
+            .contactDetails{
+                width: 40%;
+            }
+
+            .contactForm{
+                width: 60%;
+            }
+        }
+    }
+}

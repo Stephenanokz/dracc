@@ -1,0 +1,31 @@
+.CTAButton {
+    width: max-content;
+    min-width: 120px;
+    background-color: var(--secondary-color);
+    color: var(--gray-100);
+    padding: 10px 15px;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+    .icon{
+        transition: all .1s ease;
+    }
+
+    &:hover {
+        border: 3px solid var(--secondary-color);
+        background-color: transparent;
+        color: var(--secondary-color);
+
+        .icon{
+            transform: translateX(3px);
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.errorPage {
+    
+    .errorContainer {
+        
+        background-color: var(--primary-color);
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+        
+        h3 {
+            color: var(--gray-100);
+            font-size: var(--h1-font-size);
+            text-align: center;
+        }
+        
+        p {
+            color: var(--gray-300);
+            font-size: var(--h2-font-size);
+            
+            a {
+                color: var(--secondary-color-light);
+                font-style: italic;
+                text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.666);
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .errorContainer{
+
+            h3{
+                font-size: var(--big-font-size);
+            }
+            
+            p{
+                font-size: var(--h1-font-size);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .errorContainer {
+            height: 60vh;
+
+            p{
+                
+                a{
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.847);
+                }
+            }
+        }
+    }
+}

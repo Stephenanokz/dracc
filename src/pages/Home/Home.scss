@@ -1,0 +1,20 @@
+.home{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 350px) {
+        
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1024px) {
+        margin-top: 80px;
+    }
+}
