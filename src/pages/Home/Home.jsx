@@ -43,7 +43,7 @@ const Home = () => {
       <Rooms />
       <Services />
       <Blog />
-      <ShortGallery />
+      {/* <ShortGallery /> */}
     </div>
   );
 };
